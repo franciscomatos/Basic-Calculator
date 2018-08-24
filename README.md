@@ -13,7 +13,3 @@ Works properly in all browsers.
 HTML5
 CSS
 Javascript
-
-## Known Bugs
-
-Power functionality yet to be implemented, so the '^' button doesn't work.

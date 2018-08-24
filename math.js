@@ -71,6 +71,9 @@ function updateResult(signal) {
             case '/':
                 currentResult /= n;
                 break;
+            case '^':
+                currentResult = Math.pow(currentResult, n);
+                break;
             default:
                 break;
          }
@@ -106,6 +109,9 @@ function endResult() {
             break;
         case '/':
             currentResult /= n;
+            break;
+        case '^':
+            currentResult = Math.pow(currentResult, n);
             break;
         default:
             break;
