@@ -1,0 +1,73 @@
+body {
+    font-family: "Source Sans Pro", Helvetica, Arial;
+    font-weight: lighter;
+    color: white;
+}
+
+.calculator {
+    width: 20em;
+    height: 27.43em;
+    display: block;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    border-radius: 0.5em;
+    position: absolute;
+    background-color: #45555F;
+}
+
+.screen-row {
+    width: inherit;
+    height: 4.57em;
+    background-color: rgb(150, 170, 182);
+}
+
+.operation-space {
+    font-size: 2em;
+    width: 100%;
+    height: inherit;
+    text-align: center;
+    line-height: 2.375em;
+}
+
+.result-space {
+    width: 25%;
+    height: inherit;
+    text-align: center;
+    line-height: 4.57em;
+}
+
+.buttons-layout {
+    height: 22.85em;
+    width: 100%;
+    table-layout: fixed;
+}
+
+.button {
+    font-size: 2em;
+    text-align: center;
+}
+
+/*
+#previous-operation {
+    margin-bottom: -0.1em;
+    border-top-left-radius: 0.5em;
+    border-top-right-radius: 0.5em;
+    border-bottom-style: solid;
+    border-bottom-color: white;
+    border-bottom-width: 0.1em;
+}
+
+#previous-operation-space {
+    font-size: 1em;
+    overflow: scroll;
+}
+*/
+
+#current-operation {
+    border-top-width: 0.1em;
+    border-top-left-radius: 0.5em;
+    border-top-right-radius: 0.5em;
+}
+

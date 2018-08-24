@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Basic Calculator</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="math.js"></script>
+    </head>
+    <body>
+        <div class='calculator'>
+            <div class='screen-row' id='current-operation'>
+                <div class='operation-space' id='current-operation-space'></div>
+            </div>
+            <table class='buttons-layout'>
+                <tr>
+                    <td class='button' onclick="updateResult('+')">+</td>
+                    <td class='button' onclick="updateResult('-')">-</td>
+                    <td class='button' onclick="updateResult('*')">x</td>
+                    <td class='button' onclick="updateResult('/')">/</td>
+                </tr>
+                <tr>
+                    <td class='button' onclick="updateNumber('7')">7</td>
+                    <td class='button' onclick="updateNumber('8')">8</td>
+                    <td class='button' onclick="updateNumber('9')">9</td>
+                    <td class='button'>^</td>
+                </tr>
+                <tr>
+                    <td class='button' onclick="updateNumber('4')">4</td>
+                    <td class='button' onclick="updateNumber('5')">5</td>
+                    <td class='button' onclick="updateNumber('6')">6</td>
+                    <td class='button' onclick='clearAll()'>AC</td>
+                </tr>
+                <tr>
+                    <td class='button' onclick="updateNumber('1')">1</td>
+                    <td class='button' onclick="updateNumber('2')">2</td>
+                    <td class='button' onclick="updateNumber('3')">3</td>
+                    <td class='button' onclick="clearLast()">C</td>
+                </tr>
+                <tr>
+                    <td class='button' onclick="addDecimal()">.</td>
+                    <td class='button' onclick="updateNumber('0')">0</td>
+                    <td class='button' onclick="updateSignal()">+/-</td>
+                    <td class='button' onclick="endResult()">=</td>
+                </tr>
+            </table>
+        </div>
+    </body>
+</html>
